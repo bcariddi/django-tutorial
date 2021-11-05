@@ -1,9 +1,0 @@
-{% if latest_bug_list %}
-    <ul>
-    {% for bug in latest_bug_list %}
-        <li><a href="/bugs/{{ bug.id }}/">{{ bug.summary }}</a></li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No bugs are available.</p>
-{% endif %}

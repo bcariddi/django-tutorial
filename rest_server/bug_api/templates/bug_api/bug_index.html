@@ -1,0 +1,9 @@
+{% if bug_list %}
+    <ul>
+    {% for bug in bug_list %}
+        <li><a href="/bug_api/bugs/{{ bug.id }}/">{{ bug.summary }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No bugs are available.</p>
+{% endif %}
